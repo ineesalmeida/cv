@@ -1,0 +1,12 @@
+.avatar {
+    display: block;
+
+    &__img {
+        overflow: hidden;
+        object-fit: cover;
+        width: 105%;
+        border-radius: 50%;
+        
+        @include shadow(0.5);
+    }
+}

@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: $color-background;
+}
+
+.content {
+    // A4 paper
+    width: 74rem;
+    height: paper_height(74rem);
+    margin: 6rem;
+    background-color: $color-white;
+
+    @include shadow(1);
+    @include hz-center;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+}

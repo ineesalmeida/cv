@@ -1,0 +1,49 @@
+.experience {
+    &__item {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    &__job {
+        margin-bottom: 1rem;
+    }
+
+    &__company {
+        text-align: left;
+        float: left;
+        width: 50%;
+    }
+
+    &__position {
+        text-align: left;
+        float: left;
+        width: 50%;
+    }
+    
+    &__place {
+        text-align: right;
+        float: right;
+        width: 50%;
+    }
+    
+    &__date {
+        text-align: right;
+        float: right;
+        width: 50%;
+    }
+
+    &__badges {
+        display: block;
+        text-align: right;
+    }
+
+    &__badge {
+        font-size: 0.9rem;
+        font-weight: 400;
+        display: inline-block;
+        background-color: $color-primary;
+        color: white;
+        border-radius: 1rem;
+        padding: 0.1rem 0.4rem;
+    }
+}
