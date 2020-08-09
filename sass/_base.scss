@@ -6,23 +6,47 @@
     box-sizing: inherit;
 }
 
-html {
-    font-size: 62.5%;
-    background-color: $color-background;
+@media screen {
+    html {
+        font-size: 62.5%;
+        background-color: $color-background;
+    }
+
+    .content {
+        // A4 paper
+        width: 74rem;
+        height: paper_height(74rem);
+        margin: 6rem;
+        background-color: $color-white;
+
+        @include shadow(1);
+        @include hz-center;
+    }
+
+    body {
+        box-sizing: border-box;
+        padding: 3rem;
+    }
 }
 
-.content {
-    // A4 paper
-    width: 74rem;
-    height: paper_height(74rem);
-    margin: 6rem;
-    background-color: $color-white;
 
-    @include shadow(1);
-    @include hz-center;
-}
+@media print {
 
-body {
-    box-sizing: border-box;
-    padding: 3rem;
+    html {
+        font-size: 62.5%;
+        background-color: $color-white;
+    }
+
+    body {
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .content {
+        // A4 paper
+        width: 74rem;
+        height: paper_height(74rem);
+        margin: 0;
+        background-color: $color-white;
+    }
 }
