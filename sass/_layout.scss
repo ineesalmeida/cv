@@ -5,7 +5,7 @@
         float: left;
         width: $width-left-col;
         height: 100%;
-        padding: 4rem;
+        padding: 3rem 4rem;
     }
 
     &__right {
@@ -14,7 +14,7 @@
         width: 99% - $width-left-col;   
         background-color: $color-right-col;
         height: 100%;
-        padding: 4rem;
+        padding: 3rem 4rem;
         right: 1rem;
         
         @include shadow(0.5);
