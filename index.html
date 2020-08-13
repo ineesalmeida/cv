@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="cv_style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="content">
@@ -37,11 +37,15 @@
                 <div class="section__content">
                     <div class="experience">
                         <div class="experience__item">
-                            <h3 class="experience__company">Perspectum Diagnostics</h3>
-                            <h3 class="experience__place">Oxford, UK</h3>
+                            <div class="experience__header">
+                                <h3 class="experience__company">Perspectum Diagnostics</h3>
+                                <h3 class="experience__place">Oxford, UK</h3>
+                            </div>
                             <div class="experience__job">
-                                <h3 class="experience__position">Software Engineer</h3>
-                                <h3 class="experience__date">Jan 2020 - Present</h3>
+                                <div class="experience__subheader">
+                                    <h3 class="experience__position">Software Engineer</h3>
+                                    <h3 class="experience__date">Jan 2020 - Present</h3>
+                                </div>
                                 <ul>
                                     <li class="experience__bullet">Implemented peer-reviewed features for a Django web portal</li>
                                     <li class="experience__bullet">Created and released Python packages of use to other teams</li>
@@ -63,8 +67,10 @@
                                 </div>
                             </div>
                             <div class="experience__job">
-                                <h3 class="experience__position">Software Tester</h3>
-                                <h3 class="experience__date">Mar 2019 - Jan 2020</h3>
+                                <div class="experience__subheader">
+                                    <h3 class="experience__position">Software Tester</h3>
+                                    <h3 class="experience__date">Mar 2019 - Jan 2020</h3>
+                                </div>
                                 <ul>
                                     <li class="experience__bullet">Designed multiple BDD automated tests for a web portal</li>
                                     <li class="experience__bullet">Improved the already existing test framework to run tests faster</li>
@@ -83,11 +89,15 @@
                         </div>
 
                         <div class="experience__item">
-                            <h3 class="experience__company">Instituto Gulbenkian de Ciência</h3>
-                            <h3 class="experience__place">Lisbon, PT</h3>
+                            <div class="experience__header">
+                                <h3 class="experience__company">Instituto Gulbenkian de Ciência</h3>
+                                <h3 class="experience__place">Lisbon, PT</h3>
+                            </div>
                             <div class="experience__job">
-                                <h3 class="experience__position">Flow Cytometry Technician</h3>
-                                <h3 class="experience__date">Jan 2018 - Mar 2019</h3>
+                                <div class="experience__subheader">
+                                    <h3 class="experience__position">Flow Cytometry Resource Specialist</h3>
+                                    <h3 class="experience__date">Jan 2018 - Mar 2019</h3>
+                                </div>
                                 <ul>
                                     <li class="experience__bullet">Created databases and unified data for statistical analysis</li>
                                     <li class="experience__bullet">Automatized laborous report creation and data conversion</li>
@@ -106,20 +116,26 @@
                         </div>
 
                         <div class="experience__item">
-                            <h3 class="experience__company">Institute of Neural Engineering</h3>
-                            <h3 class="experience__place">Graz, AT</h3>
-                            <div class="experience__job">
-                                <h3 class="experience__position">Master's Thesis Research Intern</h3>
-                                <h3 class="experience__date">Oct 2016 - Jun 2017</h3>
-                                Published: Reinmar J. Kobler & Inês Almeida, Andreea I. Sburlea, Gernot R. Müller-Putz (2020). Using machine learning to reveal the population vector from EEG signals
+                            <div class="experience__header">
+                                <h3 class="experience__company">Institute of Neural Engineering</h3>
+                                <h3 class="experience__place">Graz, AT</h3>
                             </div>
-                            <div class="experience__badges">
+                            <div class="experience__job">
+                                <div class="experience__subheader">
+                                    <h3 class="experience__position">Master's Thesis Research Intern</h3>
+                                    <h3 class="experience__date">Oct 2016 - Jun 2017</h3>
+                                </div>
                                 <ul>
-                                    <li class="experience__badge">Python</li>
-                                    <li class="experience__badge">MATLAB</li>
-                                    <li class="experience__badge">Data Processing</li>
-                                    <li class="experience__badge">Paradigm Design</li>
+                                    <li class="experience__bullet">Published: Reinmar J. Kobler & Inês Almeida, Andreea I. Sburlea, Gernot R. Müller-Putz (2020). Using machine learning to reveal the population vector from EEG signals</li>
                                 </ul>
+                                <div class="experience__badges">
+                                    <ul>
+                                        <li class="experience__badge">Python</li>
+                                        <li class="experience__badge">MATLAB</li>
+                                        <li class="experience__badge">Data Processing</li>
+                                        <li class="experience__badge">Paradigm Design</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -152,7 +168,7 @@
             </div>
             <div class="sideSection contact">
                 <ul>
-                    <li class="contact__item"><i class="fas fa-phone"></i><span>+44 7869094999</span></li>
+                    <li class="contact__item"><i class="fas fa-phone"></i><span>+44 786 909 4999</span></li>
                     <li class="contact__item"><i class="fas fa-envelope"></i><span>contact@ines-almeida.com</span></li>
                     <li class="contact__item"><i class="fas fa-globe"></i><span>ines-almeida.com</span></li>
                     <li class="contact__item"><i class="fab fa-linkedin-in"></i><span>in/ines-de-almeida</span></li>

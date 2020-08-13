@@ -19,7 +19,7 @@ html {
     min-height: paper_height($page-width);
     background-color: $color-white;
 
-    @media (min-width: 60rem) {
+    @media screen and (min-width: 60rem) {
         margin: 6rem 0;
         @include shadow(1);
         @include hz-center;

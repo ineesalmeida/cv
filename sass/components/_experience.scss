@@ -4,39 +4,47 @@
         margin-bottom: 1rem;
     }
 
+    &__header,
+    &__subheader {
+        display: block;
+        width: 100%;
+        height: 2.4rem;
+    }
+
     &__job {
-        margin-bottom: 1rem;
+        position: relative;
     }
 
     &__company,
     &__position {
         text-align: left;
-        float: left;
         width: 70%;
+        float: left;
+    }
+
+    &__company {
+        color: $color-grey-2;
     }
 
     &__position {
         text-transform: uppercase;
-        font-size: 1.4rem;
-        margin-bottom: 0.2rem;
+        font-size: 1.3rem;
+        color: $color-grey-dark;
     }
     
     &__date,
     &__place {
-        text-align: right;
         float: right;
+        text-align: right;
         width: 30%;
         color: $color-grey;
-        font-weight: 400;
     }
 
     &__date {
-        margin-bottom: 0.7rem;
+        font-weight: 400;
     }
 
     &__place {
-        font-weight: 600;
-
         &::before {
             font-family: 'Material Icons';
             color: $color-primary;
@@ -47,6 +55,10 @@
             vertical-align: middle;
             font-weight: 900;
         }
+    }
+
+    &__bullet {
+        list-style-position: inside;
     }
 
     &__badges {
