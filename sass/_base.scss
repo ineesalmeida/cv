@@ -6,49 +6,31 @@
     box-sizing: inherit;
 }
 
-@media screen {
-    html {
-        font-size: 62.5%;
-        background-color: $color-background;
-    }
+html {
+    font-size: 62.5%;
+    background-color: $color-background;
+    
+    @media print {background-color: $color-white;}
+}
 
-    .content {
-        // A4 paper
-        width: 74rem;
-        height: paper_height(74rem);
-        margin: 6rem;
-        background-color: $color-white;
+.content {
+    // A4 paper
+    width: $page-width;
+    min-height: paper_height($page-width);
+    background-color: $color-white;
 
+    @media (min-width: 60rem) {
+        margin: 6rem 0;
         @include shadow(1);
         @include hz-center;
     }
-
-    body {
-        box-sizing: border-box;
-        padding: 3rem;
-    }
+    @media print {margin: 0;}
 }
 
+body {
+    box-sizing: border-box;
+}
 
 @media print {
-
     @page { margin: 0; }
-
-    html {
-        font-size: 62.5%;
-        background-color: $color-white;
-    }
-
-    body {
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .content {
-        // A4 paper
-        width: 74rem;
-        height: paper_height(74rem);
-        margin: 0;
-        background-color: $color-white;
-    }
 }

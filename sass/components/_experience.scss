@@ -1,0 +1,68 @@
+.experience {
+    &__item {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    &__job {
+        margin-bottom: 1rem;
+    }
+
+    &__company,
+    &__position {
+        text-align: left;
+        float: left;
+        width: 70%;
+    }
+
+    &__position {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    &__date,
+    &__place {
+        text-align: right;
+        float: right;
+        width: 30%;
+        color: $color-grey;
+        font-weight: 400;
+    }
+
+    &__date {
+        margin-bottom: 0.7rem;
+    }
+
+    &__place {
+        font-weight: 600;
+
+        &::before {
+            font-family: 'Material Icons';
+            color: $color-primary;
+            font-size: 1.4rem;
+            content: "place";
+            display: inline-block;
+            padding-right: 3px;
+            vertical-align: middle;
+            font-weight: 900;
+        }
+    }
+
+    &__badges {
+        display: block;
+        text-align: right;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__badge {
+        font-size: 0.9rem;
+        font-weight: 400;
+        display: inline-block;
+        background-color: $color-primary;
+        color: white;
+        border-radius: 1rem;
+        padding: 0.1rem 0.6rem;
+    }
+}

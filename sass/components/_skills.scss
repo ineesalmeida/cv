@@ -1,0 +1,19 @@
+.skills {
+    &__group {
+        & span {
+            font-weight: 600;
+
+            &::after{
+                content: ":"
+            }
+        }
+
+        & li{
+            display: inline-block;
+
+            &:not(:last-child)::after{
+                content: ", "
+            }
+        }
+    }
+}
