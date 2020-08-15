@@ -13,6 +13,11 @@
 
     &__job {
         position: relative;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: translateX(0.5rem);
+        }
     }
 
     &__company,

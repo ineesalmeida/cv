@@ -1,13 +1,18 @@
 .avatar {
     display: block;
+    overflow: hidden;
+    border-radius: 50%;
+
     &__img {
         object-fit: cover;
         width: 100%;
-        overflow: hidden;
-        border-radius: 50%;
     
         -webkit-box-shadow: 1rem 2rem 3rem rgba($color-grey-dark, 0.8) inset;
         -moz-box-shadow: 1rem 2rem 3rem rgba($color-grey-dark, 0.8) inset;
         box-shadow: 1rem 2rem 3rem rgba($color-grey-dark, 0.8) inset;
+
+        &:hover {
+            size: 110%;
+        }
     }
 }

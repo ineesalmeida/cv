@@ -37,3 +37,8 @@ body {
         size: A4;
     }
 }
+
+::selection {
+	color: $color-white;
+	background-color: darken(rgba($color-primary, 0.6), 10%);
+}
