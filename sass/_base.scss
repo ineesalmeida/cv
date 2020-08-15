@@ -32,5 +32,8 @@ body {
 }
 
 @media print {
-    @page { margin: 0; }
+    @page { 
+        margin: 0; 
+        size: A4;
+    }
 }
